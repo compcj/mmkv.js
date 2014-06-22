@@ -1,0 +1,19 @@
+{
+    "name": "mmkv.js",
+    "version": "0.0.1",
+    "description": "a main memory key-value store for node.js",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "lodash": "2.4.1",
+        "async": "0.9.0",
+        "minimist": "0.2.0",
+        "nconf": "0.6.9",
+    },
+    "author": "compcj",
+    "license": "MIT",
+    "private": true
+}

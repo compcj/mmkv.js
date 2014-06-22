@@ -1,0 +1,38 @@
+{
+    "components": {
+        "MMKVServer": {
+            "$impl": "mmkvServer.js"
+        },
+        "Coordinator": {
+            "$impl": "basic:basicCoordinator.js",
+            "numOfWorkers": 4
+        },
+        "Worker": {
+            "$impl": "basic:basicWorker.js"
+        },
+        "Interface": {
+            "$impl": "interface:jsonAPIInterface.js",
+            "masterPort": 8000,
+            "workerPort": 27000
+        },
+        "Storage": {
+            "$impl": "basic:basicStorage.js"
+        }
+    },
+    "mainComponent": {
+        "name": "MMKVServer",
+        "entry": "main"
+    },
+    "appConfig": {
+        "keyMax": 1000
+    },
+    "consts": {
+        "$config": "utility:consts.json"
+    },
+    "argOverride": {
+        "w": "components:Coordinator:numOfWorkers",
+        "k": "appConfig:keyMax",
+        "mp": "components:Interface:masterPort",
+        "wp": "components:Interface:workerPort"
+    }
+}

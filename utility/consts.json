@@ -1,0 +1,7 @@
+{
+    "MSG_WORKER_READY": 0,
+    "MSG_WORKER_FAILED" : -1,
+    "ACTION_GET": 0,
+    "ACTION_GETRANGE": 1,
+    "ACTION_PUT": 2
+}

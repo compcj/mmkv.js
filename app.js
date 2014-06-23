@@ -10,7 +10,6 @@ var App = module.exports = function(config, argv) {
     _.forOwn(this.config.argOverride, function(configPath, argName) {
         if (argv[argName] !== undefined) {
             setNested(this.config, configPath, argv[argName]);
-            console.log('Overriding ' + configPath + ' to ' + argv[argName] + ".");
         }
     }.bind(this));
 

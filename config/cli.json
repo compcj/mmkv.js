@@ -5,7 +5,7 @@
         },
         "Coordinator": {
             "$impl": "basic:basicCoordinator.js",
-            "numOfWorkers": 4
+            "numOfWorkers": 3
         },
         "Worker": {
             "$impl": "basic:basicWorker.js",

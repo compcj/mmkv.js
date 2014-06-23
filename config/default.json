@@ -5,7 +5,7 @@
         },
         "Coordinator": {
             "$impl": "basic:basicCoordinator.js",
-            "numOfWorkers": 4
+            "numOfWorkers": 3
         },
         "Worker": {
             "$impl": "basic:basicWorker.js"
@@ -24,7 +24,7 @@
         "entry": "main"
     },
     "appConfig": {
-        "keyMax": 1000
+        "keyMax": 100
     },
     "consts": {
         "$config": "utility:consts.json"
